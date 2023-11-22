@@ -9,6 +9,12 @@ const usePosts = () => {
     const [ isError, setIsError ] = useState(false)
     const [ hasNextPage, setHasNextPage ] = useState(false)
 
+    useEffect(() => {
+        setLoading(true)
+        setIsError(false)
+        setError({})
+    })
+
   return { loading, isError, error, results, hasNextPage }
 }
 
