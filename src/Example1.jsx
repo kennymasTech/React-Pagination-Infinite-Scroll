@@ -2,10 +2,13 @@ import { useState, useRef, useCallback } from "react"
 import usePosts from "./hooks/usePosts"
 import { confirmAlert } from "react-confirm-alert"
 import 'react-confirm-alert/src/react-confirm-alert.css'
+import { isError } from "react-query"
 
 const Example1 = () => {
   const [pageNum, setPageNum] = useState(1)
   const { loading, IsError, error, results, hasNextPage } = usePosts(pageNum)
+
+  if (isError) return <p className="center">Error : {error.message} </p>
 
   return (
     <>
