@@ -19,9 +19,10 @@ const Example1 = () => {
     if(intObserver.current) intObserver.current.disconnect()
     
     intObserver.current = new IntersectionObserver((post) => {
-      if(post[0].isIntersecting && hasNextPage)
-      console.log("we are near the last post");
-    setPageNum((prev) =>  prev + 1)
+      if(post[0].isIntersecting && hasNextPage) {
+        console.log("we are near the last post");
+      setPageNum((prev) =>  prev + 1)
+      }
   })
   
   if(post) intObserver.current.observe(post)
