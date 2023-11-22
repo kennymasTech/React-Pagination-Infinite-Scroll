@@ -22,7 +22,7 @@ const Example1 = () => {
         console.log("we are near the last post");
       setPageNum((prev) =>  prev + 1)
       }
-  })
+  });
   
   if(post) intObserver.current.observe(post)
 }, [loading, hasNextPage])
