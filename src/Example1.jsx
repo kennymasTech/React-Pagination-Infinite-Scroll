@@ -31,6 +31,8 @@ if (isError) return <p className="center">Error : {error.message} </p>
 
 const content = results.map((post, i) => {
   if(results.length === i + 1) {
+
+    return <Post key={post.id} post={post}/>
   }
     return <Post key={post.id} post={post}/>
   })
