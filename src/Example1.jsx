@@ -45,7 +45,7 @@ const content = results.map((post, i) => {
             &infin; Ex. 1 - React Only
         </h1>
 
-        {content}
+        {content};
 
         <p className='center'>Loading More Posts...</p>
 
