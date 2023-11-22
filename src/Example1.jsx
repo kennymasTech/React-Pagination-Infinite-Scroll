@@ -35,6 +35,6 @@ const Example1 = () => {
         </p>
     </>
   )
-}
+};
 
 export default Example1
