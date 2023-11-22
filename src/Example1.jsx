@@ -35,7 +35,7 @@ const content = results.map((post, i) => {
     return <Post ref={lastPostRef} key={post.id} post={post}/>
   }
     return <Post key={post.id} post={post}/>
-  })
+  });
 
   return (
     <>
