@@ -28,6 +28,8 @@ const Example1 = () => {
             &infin; Ex. 1 - React Only
         </h1>
 
+        {content}
+
         <p className='center'>Loading More Posts...</p>
 
         <p className='center'>
