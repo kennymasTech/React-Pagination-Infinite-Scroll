@@ -9,6 +9,8 @@ const Example1 = () => {
             &infin; Ex. 1 - React Only
         </h1>
 
+        <p className='center'>Loading More Posts...</p>
+
         <p className='center'>
             <a href="#top">Back To Top</a>
         </p>
