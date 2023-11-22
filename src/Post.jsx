@@ -5,7 +5,7 @@ const Post = React.forwardRef(({post}, ref) => {
         <>
             <h2>{post.title}</h2>
             <p>{post.body}</p>
-            <p>Post ID: {post.title}</p>
+            <p>Post ID: {post.id}</p>
         </>
     )
 
