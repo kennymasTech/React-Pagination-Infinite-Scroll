@@ -8,7 +8,7 @@ import Post from "./Post";
 
 const Example1 = () => {
   const [pageNum, setPageNum] = useState(1);
-  const { loading, isError, error, results, hasNextPage } = usePosts(pageNum)
+  const { loading, isError, error, results, hasNextPage } = usePosts(pageNum);
   
   const intObserver = useRef()
   
