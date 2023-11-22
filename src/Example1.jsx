@@ -2,7 +2,17 @@ import React from 'react'
 
 const Example1 = () => {
   return (
-    <div>Example1</div>
+    <>
+        <h1 id='top' >
+            &infin; Infinite Query &amp; Scroll
+            <br/>
+            &infin; Ex. 1 - React Only
+        </h1>
+
+        <p className='center'>
+            <a href="#top">Back To Top</a>
+        </p>
+    </>
   )
 }
 
