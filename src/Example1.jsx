@@ -24,7 +24,7 @@ const Example1 = () => {
       }
   });
   
-  if(post) intObserver.current.observe(post)
+  if(post) intObserver.current.observe(post);
 }, [loading, hasNextPage]);
 
 if (isError) return <p className="center">Error : {error.message} </p>
