@@ -1,4 +1,7 @@
-import React from 'react'
+import { useState, useRef, useCallback } from "react"
+import usePosts from "./hooks/usePosts"
+import { confirmAlert } from "react-confirm-alert"
+import 'react-confirm-alert/src/react-confirm-alert'
 
 const Example1 = () => {
   return (
